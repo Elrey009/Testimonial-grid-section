@@ -1,0 +1,219 @@
+/** css variables */
+:root {
+  /* *Colors */
+
+  /* * Primary */
+
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+
+  /* *Neutral */
+
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+/* * Resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* * Base selectors */
+
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--Light-grayish-blue);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+}
+
+.attribution {
+  font-size: 18px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* * utility */
+
+.container {
+  width: min(89%, 1110px);
+  margin-inline: auto;
+  margin-block: 8rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit minmax(6, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "first-con first-con  second-con side-bar   "
+    " third-con  fourth-con  fourth-con side-bar   ";
+  gap: 20px;
+}
+
+.sect-1 {
+  background-color: var(--Moderate-violet);
+  display: grid;
+  grid-area: first-con;
+  border-radius: 15px;
+  padding: 20px;
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position-x: 80%;
+}
+
+.sect-2 {
+  background-color: var(--Very-dark-grayish-blue);
+  display: grid;
+  grid-area: second-con;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.sect-3 {
+  background-color: var(--White);
+  display: grid;
+  grid-area: third-con;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.sect-4 {
+  background-color: var(--Very-dark-blackish-blue);
+  display: grid;
+  grid-area: fourth-con;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.aside {
+  background-color: var(--White);
+  display: grid;
+  grid-area: side-bar;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+h1,
+h2,
+p {
+  color: var(--Light-gray);
+}
+
+h3 {
+  color: var(--Light-grayish-blue);
+  font-weight: medium;
+  padding: 1.5Spx;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-size: 18px;
+}
+
+p {
+}
+
+.verified {
+  opacity: 0.5;
+}
+
+.sec-content p {
+  opacity: 0.6;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  word-spacing: 5px;
+}
+.sec-summary {
+  display: flex;
+  grid-template-columns: 150px, 1fr;
+  gap: 15px;
+}
+
+.image {
+  border-radius: 50%;
+  height: 40px;
+  width: auto;
+}
+
+@media (max-width: 700px) {
+  .container {
+    align-items: center;
+    justify-content: center;
+    margin: ;
+  }
+  .article-card {
+    min-height: 100vh;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(500px, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "first-con  first-con  "
+      "second-con  second-con "
+      "third-con third-con "
+      "fourth-con fourth-con "
+      "side-bar  side-bar   ";
+  }
+
+  .sect-1 {
+    background-color: var(--Moderate-violet);
+    display: grid;
+    height: 90%;
+    width: 85%;
+    grid-area: first-con;
+    border-radius: 15px;
+  }
+
+  .sect-2 {
+    background-color: var(--Very-dark-grayish-blue);
+    display: grid;
+    grid-area: second-con;
+    border-radius: 15px;
+  }
+
+  .sect-3 {
+    background-color: var(--White);
+    display: grid;
+    grid-area: third-con;
+    border-radius: 15px;
+  }
+
+  .sect-4 {
+    background-color: var(--Very-dark-blackish-blue);
+    display: grid;
+    grid-area: fourth-con;
+    border-radius: 15px;
+  }
+
+  .aside {
+    background-color: var(--White);
+    display: grid;
+    grid-area: side-bar;
+    border-radius: 15px;
+  }
+}
