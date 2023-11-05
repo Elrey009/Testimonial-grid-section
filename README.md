@@ -30,8 +30,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Elrey009/Testimonial-grid-section)
+- Live Site URL: [Add live site URL here](https://testimonial-grid-section-umd3.vercel.app/)
 
 ## My process
 
@@ -71,5 +71,13 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/solutions/responsive-testimonial-grid-section-dR-l5ie8pL)
+- Twitter - [@yourusername](https://twitter.com/da_ni_lo009)
+
+
+
+I've just completed a front-end coding challenge from @frontendmentor! 🎉
+
+You can see my solution here: https://www.frontendmentor.io/solutions/responsive-testimonial-grid-section-dR-l5ie8pL
+
+Any suggestions on how I can improve are welcome!
